@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>API users</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Список пользователей</h1>
+        <div class="filters__container">
+            <input type="text" class="search__input" placeholder="Поиск по имени">
+            <select class="filter__select">
+                <option value="">Все компании</option>
+            </select>
+            <button class="reset__filter">Очистить фильтры</button>
+        </div>
+        <p class="error__message">Пользователь не найден</p>
+        <ul class="users__list"></ul>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

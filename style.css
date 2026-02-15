@@ -1,0 +1,73 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+
+body {
+    font-family: Open Sans;
+    font-size: 16px;
+    background-color: #fff;
+    color: #000;
+}
+
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.title {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+.filters__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 315px;
+    gap: 8px;
+}
+.search__input {
+    border-radius: 4px;
+    padding: 2px 6px;
+    border: 2px solid #adadad;
+}
+
+.search__input::placeholder {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.filter__select {
+    border-radius: 4px;
+    padding: 2px 6px;
+    border: 2px solid #adadad;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.reset__filter {
+    padding: 2px 6px;
+    background-color: transparent;
+    border: 2px solid #000;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 15px;
+}
+.users__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.users__list li {
+    font-weight: 500;
+}
+
+.error__message {
+    color: red;
+    display: none;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.error__message.active {
+    display: block;
+}
